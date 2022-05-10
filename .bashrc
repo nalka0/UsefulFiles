@@ -1,6 +1,7 @@
 reference_branch_name=dev
 alias a="git add ."
-alias cam="git commit --amend"
+alias c="git commit -a -m \"\$(git branch --show-current)\""
+alias cam="git commit -a --amend"
 alias camne="git commit -a --amend --no-edit"
 alias pf="git push --force-with-lease"
 alias all="git add . && git commit --amend --no-edit && git push --force-with-lease"
